@@ -118,21 +118,27 @@ h1 {
   margin-bottom: 2rem;
 }
 
-/* Media Queries for Responsiveness */
-@media only screen and (min-width: 600px) {
-  main {
-    flex-direction: row;
+/* Media Query for Small Devices (Phones) */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 50%;
+  }
+
+  header {
+    height: 20vh;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    top: 35%;
+  }
+
+  .number {
+    font-size: 3rem;
   }
 
   .left,
   .right {
-    width: 50%;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .number {
-    font-size: 8rem;
-    width: 20rem;
+    width: 100%;
   }
 }
